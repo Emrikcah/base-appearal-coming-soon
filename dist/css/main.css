@@ -1,0 +1,76 @@
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 68%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --gradient-one: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%)) no-repeat;
+  --gradient-two: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)) no-repeat;
+  --light: 300;
+  --regular: 400;
+  --semi-bold: 600;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--desaturated-red);
+}
+
+img {
+  width: 11rem;
+}
+
+.logo {
+  padding: 3rem;
+}
+
+.grid {
+}
+
+.bg-img {
+  width: 37.6rem;
+  height: 25rem;
+  background-image: url("../images/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 5rem;
+}
+
+.sign-up {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: var(--light);
+}
+
+.title,
+.coming,
+.soon {
+  font-size: 5.33rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+}
+
+.coming,.soon{
+   font-weight: var(--regular);
+   color: var(--dark-grayish-red);
+}
+
+.text {
+   font-size: 1.5rem;
+   line-height: 2.4rem;
+   
+}
