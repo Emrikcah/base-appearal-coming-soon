@@ -17,18 +17,34 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
   </head>
   <body>
-    <div class="logo">
-      <img src="images/logo.svg" alt="Base Apparel" />
-    </div>
     <main class="grid">
       <section class="bg-img"></section>
+
       <section class="sign-up">
-        <h1 class="title">We're <span class="coming">coming <span class="soon">soon</span></span></h1>
+        <img src="images/logo.svg" class="logo" alt="Base Apparel" />
+        <div class="bg-img-mobile"></div>
         <div class="text">
-          Hello fellow shoppers! We're currently building our new fashion store Add your email below to stay up-to-date with announcements and our launch deals.
-          
+          <h1 class="title">
+            We're <span class="coming">coming <span class="soon">soon</span></span>
+          </h1>
+          <div class="inner-text text">
+            Hello fellow shoppers! We're currently building our new fashion store Add your email
+            below to stay up-to-date with announcements and our launch deals.
+          </div>
+
+          <form class="input-wrapper">
+            <input type="email" class="input" placeholder="Email Address" />
+            <!-- error-icon triggered with javascript -->
+            <img src="images/icon-error.svg" alt="" class="error-icon" />
+            <button type="submit" class="input-btn">
+              <img src="images/icon-arrow.svg" alt="" />
+            </button>
+            <!-- error-text triggered with javascript -->
+            <small class="error-text">Please provide a valid email</small>
+          </form>
         </div>
       </section>
     </main>
+    <script src="js/app.js"></script>
   </body>
 </html>
