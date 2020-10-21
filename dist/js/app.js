@@ -1,16 +1,15 @@
 const form = document.querySelector(".input-wrapper");
 const input = document.querySelector(".input");
 
-
 function checkEmail(e) {
-    e.preventDefault();
+  e.preventDefault();
   const inputValue = input.value;
-  if (validateEmail(inputValue) !== true) {
-     form.classList.add('error')
+  if (validateEmail(inputValue)) {
+    //if true dont add the error class
+    form.classList.remove("error");
   } else {
-   form.classList.remove('error')
+    form.classList.add("error");
   }
- 
 }
 
 // validateEmail() taken from stackoverflow https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
